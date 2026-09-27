@@ -26,7 +26,7 @@ Mod+Shift+F - Toggle window to fullscreen
 Mod+Shift+T - Window floating
 
 - Programs -
-Mod+Return - ${terminal} (kitty/alacritty)
+Mod+Return - Terminal (kitty/alacritty)
 Mod+W - Firefox
 Mod+E - Nautilus
 Mod+T - MaterialGram
