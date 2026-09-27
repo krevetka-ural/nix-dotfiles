@@ -4,13 +4,13 @@ This is my NixOS and Home Manager rice with Noctalia Shell on Niri with Tokyo Ni
 ## Short overview
 
 ### Terminal
-Main terminal - Kitty, also, you can change them to Alacritty. Main terminal shell: Fish w/Starship. Also, I made custom .NixConfig-style Fastfetch. Soon, I`m made other terminal shells (zhs, bash, etc.) with custom featuers.
+Main terminal - **Kitty**, also, you can change them to **Alacritty**. Main terminal shell: **Fish** w/**Starship**. Also, I made custom .NixConfig-style **Fastfetch**. Soon, I`m made other terminal shells (**zhs, bash,** etc.) with custom featuers.
 
 ### Niri and Noctalia
-Niri have custom binds and deep integration w/Noctalia v5. Custom Noctalia statusbar have a resource monitor and other features. Some Niri keybinds can starting programs (Prism, OBS, Obsidian, Btop, etc.).
+**Niri** have custom binds and deep integration w/**Noctalia v5**. Custom **Noctalia** statusbar have a resource monitor and other features. Some **Niri** keybinds can starting programs (**Prism, OBS, Obsidian, Btop,** etc.).
 
 ### Main Niri binds
-You can find all Niri/Noctalia binds in `home/desktop/niri/binds.kdl`.
+You can find all **Niri/Noctalia** binds in `home/desktop/niri/binds.kdl`.
 
 ```
 - Niri features-
