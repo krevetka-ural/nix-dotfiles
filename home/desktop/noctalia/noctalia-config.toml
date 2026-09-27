@@ -76,8 +76,6 @@ enabled = false
         opacity = 1.0
         padding = 6.0
 
-[calendar]
-
 [control_center.calendar]
 show_events_card = false
 show_week_numbers = true
@@ -151,7 +149,6 @@ widget_order = [
         show_when_idle = false
 
 [location]
-address = "your_location"
 auto_locate = true
 
 [lockscreen_widgets]
