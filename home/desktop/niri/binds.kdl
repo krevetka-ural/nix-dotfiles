@@ -1,0 +1,164 @@
+  binds {
+
+  //----------//
+  // PROGRAMS //
+  //----------//
+
+  // OPEN TERMINAL
+//    Mod+Return { spawn "alacritty"; }
+    Mod+Return { spawn "kitty"; }
+
+  // OPEN NAUTILUS
+    Mod+E { spawn "nautilus"; }
+
+  // OPEN TELEGRAM
+    Mod+T { spawn-sh "flatpak run io.github.kukuruzka165.materialgram"; }
+
+  // OPEN DISCORD
+    Mod+D { spawn "discord"; }
+
+  // OPEN PRISM LAUNCHER
+    Mod+P { spawn "prismlauncher"; }
+
+  // OPEN OBS STUDIO
+    Mod+O { spawn "obs"; }
+
+  // OPEN OBSIDIAN
+    Mod+Shift+O { spawn "obsidian"; }
+
+  // OPEN BROWSER
+    Mod+W { spawn "firefox"; }
+
+  // OPEN BTOP IN ${terminal}
+//    Ctrl+Alt+Delete { spawn "alacritty" "btop"; }
+    Ctrl+Alt+Delete { spawn "kitty" "btop"; }
+
+  //------------//
+  // WORKSPACES //
+  //------------//
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+
+  // MOVE WINDOW TO WORKSPACE
+    Mod+Ctrl+1 { move-column-to-workspace 1; }
+    Mod+Ctrl+2 { move-column-to-workspace 2; }
+    Mod+Ctrl+3 { move-column-to-workspace 3; }
+    Mod+Ctrl+4 { move-column-to-workspace 4; }
+    Mod+Ctrl+5 { move-column-to-workspace 5; }
+    Mod+Ctrl+6 { move-column-to-workspace 6; }
+
+    Mod+Shift+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+    Mod+Shift+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
+
+  //-------------------//
+  // NIRI WINDOW BINDS //
+  //-------------------//
+
+  // CLOSE WINDOW
+    Mod+Q repeat=false { close-window; }
+
+  // KEYBIND CHEATSHEET
+    Mod+Shift+Slash { show-hotkey-overlay; }
+
+  // WINDOW OVERVIEW
+    Mod+Tab repeat=false { toggle-overview; }
+
+  // RESIZE WINDOWS
+    Mod+R { switch-preset-column-width; }
+
+  // HORIZONTAL/VERTICAL RESIZE WINDOW
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+    Mod+Shift+Minus { set-window-height "-10%"; }
+    Mod+Shift+Equal { set-window-height "+10%"; }
+
+  // SCROLLING WINDOWS
+    Mod+WheelScrollDown { focus-column-right; }
+    Mod+WheelScrollUp { focus-column-left; }
+
+  // MAXIMIZE WINDOWS
+    Mod+F { maximize-column; }
+    Mod+Shift+F { fullscreen-window; }
+
+  // CENTRED WINDOW COLOUMN
+    Mod+C { center-column; }
+
+  // TOGGLE FLOATING
+    Mod+Shift+T { toggle-window-floating; }
+
+  //------------------//
+  // OTHER NIRI BINDS //
+  //------------------//
+
+    Mod+Shift+Left { focus-monitor-left; }
+    Mod+Shift+Down { focus-monitor-down; }
+
+    Mod+Shift+U { move-workspace-down; }
+    Mod+Shift+I { move-workspace-up; }
+
+    Mod+WheelScrollRight { focus-column-right; }
+    Mod+WheelScrollLeft { focus-column-left; }
+
+  // CHANGE FOCUS
+    Mod+Left { focus-column-left; }
+    Mod+Down { focus-window-down; }
+    Mod+Up { focus-window-up; }
+    Mod+Right { focus-column-right; }
+
+  // MOVE WINDOW
+    Mod+Ctrl+Left { move-column-left; }
+    Mod+Ctrl+Down { move-window-down; }
+    Mod+Ctrl+Up { move-window-up; }
+    Mod+Ctrl+Right { move-column-right; }
+
+  // MOVE WINDOW UNDER OTHER WINDOW
+    Mod+BracketLeft { consume-or-expel-window-left; }
+    Mod+BracketRight { consume-or-expel-window-right; }
+
+  // EXIT FROM NIRI
+    Mod+Shift+E { quit; }
+
+  //----------------//
+  // NOCTALIA BINDS //
+  //----------------//
+
+  // Open launcher
+    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+
+  // Open overview
+    Alt+Space { spawn-sh "noctalia msg panel-toggle control-center"; }
+
+  // Open clipboard
+    Mod+Shift+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
+
+  // Open session
+    Mod+X { spawn-sh "noctalia msg panel-toggle session"; }
+
+  // Open Noctalia settings
+    Mod+I { spawn-sh "noctalia msg settings-toggle"; }
+
+  // Lock Noctalia
+    Mod+Shift+L { spawn-sh "noctalia msg session lock"; }
+
+  // Noctalia "Alt Tab"
+    Mod+Ctrl+Tab { spawn-sh "noctalia msg window-switcher"; }
+
+  // Open wallpaper switch
+    Alt+Shift+W { spawn-sh "noctalia msg panel-toggle wallpaper"; }
+
+  // Open Wallheaven plugin
+    Mod+Shift+W { spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; }
+
+  // Open KDE Connect/Scrpy plugin
+    Mod+Shift+P { spawn-sh "noctalia msg panel-toggle icefish/phone-operate:main"; }
+
+  // Noctalia screenshot
+    Print { spawn-sh "noctalia msg screenshot-region"; }
+    Ctrl+Print { spawn-sh "noctalia msg screenshot-fullscreen"; }
+    Alt+Print { spawn-sh "noctalia msg annotate"; }
+
+}

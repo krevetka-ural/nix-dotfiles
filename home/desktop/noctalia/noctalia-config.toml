@@ -1,0 +1,312 @@
+[audio]
+enable_sounds = true
+
+[backdrop]
+blur_intensity = 0.24999999441206455
+enabled = true
+tint_intensity = 0.0
+
+[bar]
+order = [ "default" ]
+
+[bar.default.monitor."HDMI-A-1"]
+match = "HDMI-A-1"
+enabled = false
+
+    [bar.default]
+    border = "primary"
+    center = [ "audio_visualizer", "workspaces", "weather" ]
+    end = [ "group:g2", "group:g3", "group:g5", "group:g4" ]
+    margin_edge = 16
+    margin_ends = 16
+    padding = 16
+    panel_overlap = 0
+    radius = 14
+    start = [ "group:g1", "media" ]
+    thickness = 44
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "cpu", "ram", "temp" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "keyboard_layout", "tray" ]
+        opacity = 1.0
+        padding = 6.0
+        widget_spacing = 6
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g3"
+        members = [ "volume", "input_volume" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g4"
+        members = [ "date", "clock" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g5"
+        members = [ "bar", "network", "privacy", "status" ]
+        opacity = 1.0
+        padding = 6.0
+
+[calendar]
+
+[control_center.calendar]
+show_events_card = false
+show_week_numbers = true
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [
+    "desktop-widget-0000000000000001",
+    "desktop-widget-0000000000000002",
+    "desktop-widget-0000000000000003",
+    "desktop-widget-0000000000000004"
+]
+
+    [desktop_widgets.grid]
+    cell_size = 32
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 320.0
+    box_width = 256.0
+    cx = 160.0
+    cy = 1248.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background_radius = 14
+        hide_when_no_media = false
+        layout = "vertical"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+        clock_style = "analog"
+        color = "primary"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 416.0
+    box_width = 416.0
+    cx = 2320.0
+    cy = 1200.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "calendar"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        show_events = false
+        show_week_numbers = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000004]
+    box_height = 96.0
+    box_width = 256.0
+    cx = 160.0
+    cy = 1040.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
+        background = false
+        bands = 32
+        centered = false
+        reversed = false
+        show_when_idle = false
+
+[location]
+address = "your_location"
+auto_locate = true
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@DP-1",
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 32
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 1258.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+
+[osd]
+offset_x = 16
+offset_y = 16
+position = "bottom_center"
+position_vertical = "bottom_center"
+
+[plugin_settings."andrewdems/vpn-manager"]
+panel_open_near_click = false
+
+[plugin_settings."noctalia/wallhaven"]
+api_key = "ADD_YOUR_API_WALLHEAVEN"
+download_dir = "~/Pictures/Wallheaven"
+
+[plugins]
+enabled = [ "icefish/phone-operate", "noctalia/wallhaven", "andrewdems/vpn-manager", "ashur-d/wallpaper-widget" ]
+
+[shell]
+avatar_path = "/your/avatar/path.png"
+card_borders = false
+clipboard_history_max_entries = 10000
+font_family = "JetBrainsMono NF"
+input_borders = false
+password_style = "random"
+polkit_agent = true
+time_format = "{:%H:%M:%S}"
+
+    [shell.greeter_sync]
+    auto_sync = true
+
+    [shell.keyboard_layout.custom_labels]
+    "English (US)" = "English"
+    Russian = "Russian"
+
+    [shell.launcher]
+    categories = false
+    show_app_origin_indicator = true
+    show_icons = false
+    sort_by_usage = false
+
+    [shell.panel]
+    clipboard_placement = "attached"
+    launcher_placement = "attached"
+    polkit_placement = "attached"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 36
+    
+    [shell.screenshot]
+    save_to_file = true
+    directory = "~/Pictures/Screenshots"     
+
+[theme]
+builtin = "Tokyo-Night"
+mode = "dark"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "starship", "qt" ]
+    community_ids = [ "discord", "telegram", "obsidian", "vscode", "prismlauncher", "fastfetch", "obs" ]
+
+[wallpaper]
+transition = [ "wipe", "zoom" ]
+transition_on_startup = true
+
+[widget.audio_visualizer]
+capsule = true
+reversed = true
+
+[widget.bar]
+type = "andrewdems/vpn-manager:bar"
+
+[widget.clock]
+capsule = true
+format = "{:%H:%M:%S}"
+
+[widget.cpu]
+visualization = "graph"
+
+[widget.keyboard_layout]
+display = "full"
+hide_when_single_layout = true
+show_glyph = false
+
+[widget.lock_keys]
+show_num_lock = false
+
+[widget.media]
+artist_first = true
+capsule = true
+
+[widget.network]
+show_label = false
+vpn_status = "both"
+
+[widget.ram]
+visualization = "graph"
+
+[widget.status]
+type = "icefish/phone-operate:status"
+
+[widget.taskbar]
+show_active_indicator = false
+
+[widget.temp]
+visualization = "graph"
+
+[widget.weather]
+capsule = true
+
+[widget.workspaces]
+active_pill_size = 1.0
+anchor = true
+capsule = true
+focused_output_only = true
+max_label_chars = 20
