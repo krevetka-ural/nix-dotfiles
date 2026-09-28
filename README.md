@@ -72,7 +72,7 @@ I use **MaterialGram** because **Ayugram** and **Telegram** don't have MD-stylin
 **Sober** isn't available in *nixpkgs* for Roblox.
 
 ![YAY! ROBLAX!](assets/yay_roblax.gif)
-amYA-A-AY! ROBLAX!
+YA-A-AY! ROBLAX!
 
 ## Gallery
 ![Screen0](assets/Desktop_w_fastfetch.png)
