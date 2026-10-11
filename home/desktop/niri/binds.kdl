@@ -51,8 +51,8 @@
     Mod+Ctrl+5 { move-column-to-workspace 5; }
     Mod+Ctrl+6 { move-column-to-workspace 6; }
 
-    Mod+Shift+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
-    Mod+Shift+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
+    Mod+Shift+WheelScrollDown { focus-workspace-down; }
+    Mod+Shift+WheelScrollUp { focus-workspace-up; }
 
   //-------------------//
   // NIRI WINDOW BINDS //
