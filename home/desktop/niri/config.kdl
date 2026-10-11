@@ -122,8 +122,8 @@
     draw-border-with-background false
   }
 
-//---------------//
+//----------------//
 // IMPORT CONFIGS //
-//---------------//
+//----------------//
 include "binds.kdl"
 include "noctalia.kdl"
