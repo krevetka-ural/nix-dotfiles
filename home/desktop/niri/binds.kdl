@@ -51,6 +51,9 @@
     Mod+Ctrl+5 { move-column-to-workspace 5; }
     Mod+Ctrl+6 { move-column-to-workspace 6; }
 
+// WINDOW OVERVIEW
+    Mod+Tab { toggle-overview; }
+
     Mod+Shift+WheelScrollDown { focus-workspace-down; }
     Mod+Shift+WheelScrollUp { focus-workspace-up; }
 
@@ -59,13 +62,10 @@
   //-------------------//
 
   // CLOSE WINDOW
-    Mod+Q repeat=false { close-window; }
+    Mod+Q { close-window; }
 
   // KEYBIND CHEATSHEET
     Mod+Shift+Slash { show-hotkey-overlay; }
-
-  // WINDOW OVERVIEW
-    Mod+Tab repeat=false { toggle-overview; }
 
   // RESIZE WINDOWS
     Mod+R { switch-preset-column-width; }
