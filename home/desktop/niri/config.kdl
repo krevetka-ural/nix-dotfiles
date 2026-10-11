@@ -7,6 +7,7 @@
     mode "2560x1440@179.999"
     scale 1
     transform "normal"
+    focus-at-startup
     position x=0 y=0
   }
 
