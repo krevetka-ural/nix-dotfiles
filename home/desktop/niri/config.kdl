@@ -118,11 +118,6 @@
     clip-to-geometry true
   }
 
-  window-rule {
-    match app-id=r#"^com\.danklinux\.dms$"#
-    open-floating true
-  }
-
   layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true
