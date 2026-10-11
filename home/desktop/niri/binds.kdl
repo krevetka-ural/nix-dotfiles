@@ -17,15 +17,6 @@
   // OPEN DISCORD
     Mod+D { spawn "discord"; }
 
-  // OPEN PRISM LAUNCHER
-    Mod+P { spawn "prismlauncher"; }
-
-  // OPEN OBS STUDIO
-    Mod+O { spawn "obs"; }
-
-  // OPEN OBSIDIAN
-    Mod+Shift+O { spawn "obsidian"; }
-
   // OPEN BROWSER
     Mod+W { spawn "firefox"; }
 
