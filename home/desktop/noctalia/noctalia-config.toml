@@ -84,7 +84,6 @@ show_week_numbers = true
 schema_version = 2
 widget_order = [
     "desktop-widget-0000000000000001",
-    "desktop-widget-0000000000000002",
     "desktop-widget-0000000000000003",
     "desktop-widget-0000000000000004"
 ]
@@ -109,11 +108,6 @@ widget_order = [
         background_radius = 14
         hide_when_no_media = false
         layout = "vertical"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
-        background = false
-        clock_style = "analog"
-        color = "primary"
 
     [desktop_widgets.widget.desktop-widget-0000000000000003]
     box_height = 416.0
